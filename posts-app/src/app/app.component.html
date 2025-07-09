@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<div class="app-container">
+    <div class="posts-list-container">
+        <app-posts-list [posts]="posts" (authorClick)="authorClick($event)"></app-posts-list>
+    </div>
+    <div class="author-details-container">
+        <app-author-details [author]="selectedAuthor"></app-author-details>
+    </div>
+</div>

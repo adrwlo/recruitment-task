@@ -1,0 +1,21 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    gap: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+
+    .posts-list-container {
+        flex: 0 0 65%;
+        max-width: 65%;
+        overflow-y: auto;
+    }
+    
+    .author-details-container {
+        flex: 1 1 35%;
+        max-width: 35%;
+        overflow-y: auto;
+        border-left: 1px solid #e0e0e0;
+        padding-left: 24px;
+    }
+}

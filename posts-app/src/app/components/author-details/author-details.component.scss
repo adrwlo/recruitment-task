@@ -1,0 +1,21 @@
+.author-card {
+    max-width: 400px;
+    margin: 24px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.author-placeholder-card {
+    max-width: 400px;
+    margin: 24px auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    mat-card-content {
+        p {
+            margin: 0;
+        }
+    }
+}

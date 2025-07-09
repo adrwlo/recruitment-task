@@ -1,0 +1,17 @@
+@if (author) {
+    <mat-card class="author-card">
+        <mat-card-header>
+            <mat-card-title>{{author.name}}</mat-card-title>
+            <mat-card-subtitle>{{author.email}}</mat-card-subtitle>
+        </mat-card-header>
+            <mat-card-content>
+                <p><strong>Company:</strong> {{author.company.name}}</p>
+            </mat-card-content>
+    </mat-card>
+} @else {
+    <mat-card class="author-placeholder-card">
+        <mat-card-content>
+            <p>Select an author from the list on the left.</p>
+        </mat-card-content>
+    </mat-card>
+}

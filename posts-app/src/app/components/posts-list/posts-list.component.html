@@ -1,0 +1,11 @@
+<h2>List of posts</h2>
+<mat-nav-list class="post-list">
+    @for (post of posts; track post.id) {
+        <mat-list-item [class.active]="post.id === selectedPostId" class="post-item">
+            <div class="post-content" (click)="onAuthorClick(post)">
+                <strong class="post-title">{{post.title}}</strong>
+                <div class="post-body">{{post.body}}</div>
+            </div>
+        </mat-list-item>
+    }
+</mat-nav-list>

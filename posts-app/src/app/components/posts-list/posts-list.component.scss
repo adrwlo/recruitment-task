@@ -1,0 +1,30 @@
+.post-list {
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.post-item {
+    cursor: pointer;
+
+    &.active,
+    &:hover {
+        background-color: #f5f5f5c2;
+    }
+}
+
+.post-content {
+    flex: 1;
+}
+
+.post-title {
+    color: rgb(174, 174, 238);
+}
+
+.post-body {
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
